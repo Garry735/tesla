@@ -1,0 +1,15 @@
+# Set your GitHub username & email (only do this once)
+git config --global user.name "YourGitHubUsername"
+git config --global user.email "your-email@example.com"
+
+# Clone your existing repository (replace with your repo URL)
+git clone https://github.com/YOUR-USERNAME/YOUR-REPO.git
+cd YOUR-REPO
+
+# Create the index.html file automatically
+echo "<!DOCTYPE html><html><head><title>Tesla AI Hub</title></head><body><h1>Welcome to Tesla AI Hub</h1></body></html>" > index.html
+
+# Upload & push everything to GitHub
+git add .
+git commit -m "Added index.html"
+git push origin main
